@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Index</title>
+<link rel="stylesheet" href="./css/animat.css">
+
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ 
+
+
+      <!-- css link start -->
+      <link rel="stylesheet" href="./css/index.css">
+      <!-- css link end -->
+      <!-- manifest -->
+    <link rel="manifest" href="./manifest.json">
+      <!-- bootstrap link start -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <!-- bootstrap link End-->
+</head>
+
+<body>
+     
+      
+      <!-- ================================================================ -->
+     
+
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mynav">
+
+
+        
+            <img src="./pic/olx-logo1.png" alt=""
+                        style="width:60px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+
+
+                        <div class="form-inline my-2 my-lg-0 animated zoomIn">
+                              <input class="form-control mr-sm-0 " id="txtSearch" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-info " id="btnsearch" onclick="search()">
+                                                <i class="fas fa-search"></i>
+                                                Search
+                                    </button>
+                                    
+                                    <!-- <li class="nav-item col-md-6">
+                                                <div id="searchBox">
+                                                    <input type="text"   onfocus="change('searchBox')"placeholder="Find Cars, Mobile Phones and more.." onblur="unchange('searchBox')">
+                                                    <i class="fa fa-map-marker fa-lg fa-fw" id="icon"></i>
+                                            
+                                            </div>
+                                    </li>
+                               <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button> -->
+                             <span id="dbemail"></span>
+                              </div>
+                        <li class="nav-item animated zoomIn" id="log-btn">
+                             <span id="user-login">
+                                   <button  class="btn btn-outline-info my-2 my-sm-0"id="btnlogin"onclick="formlogin()">
+                                         <!-- <a  href="login/index.html" class="btn-outline-info" id="log"> -->
+                                         <i class="fas fa-sign-in-alt" ></i>
+                                      Login
+                                    <!-- </a> -->
+                                   </button>
+                             </span>
+                        </li>
+                        <li></li>
+                             <span id="ddown">
+                                    <div class="dropdown" >
+                                          <ul>
+                                                <li class="nav-item dropdown animated zoomIn" id="dropdown-li">
+                                                      <button class="btn btn-outline-info " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fa fa-user-circle-o" style="width:40px"  class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                                            <span id="umail"></span>
+                                                         
+                                                      </button>
+                                                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                        <button class="dropdown-item" type="button" onclick="logout()">Logout</button>
+                                                        <button class="dropdown-item" type="button" onclick="gotopro()">Add Product</button>
+                                                        <button class="dropdown-item" type="button" onclick="addtofav()">My favorite</button>
+                                                        <button class="dropdown-item" type="button" onclick="profile()">Profile</button>
+                                                      
+                                                      </div>
+
+                                                </li>
+                                          </ul>
+                                              </div>
+                             </span>
+                        </li>
+                        <li class="nav-item " id="log-btn">
+                              <!-- <a class="nav-link"  id="log">Logout</a> -->
+                              <!-- <button  onclick="logout()">Logout</button> -->
+                        </li>
+                  
+                        <li class="nav-item animated zoomIn" >
+                              <button class="btn btn-outline-info " id="cam-btn" onclick="APP()">
+                                    <!-- <a class="nav-link btn" href="login/index.html">  -->
+                                          <i class="fas fa-camera-retro"></i>
+                                          SELL
+                                    <!-- </a> -->
+
+                              </button>
+                        </li>
+
+                  
+                                    
+                  </ul>
+
+            
+      </div>
+      </nav>
+
+      <div id="banner" class="pc">
+                  <img src="pic/banner.png" alt="" class="img-fluid" style="width:100%"> 
+      </div>   
+    <!-- content-starts-here -->
+	
+    <section>
+      <div class="container">
+          <div class="row">
+              <div>
+                  <div class="headerText text-left">
+                      <h4>Popular Categories</h4>
+                      <p>
+                          Browse through some of our most popular categories.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div id="indexRowPoster" class="row">
+          </div>
+          <!-- <div id="indexRowPosterv" class="row">
+          </div>
+          <div id="indexRowPosterb" class="row">
+          </div>
+          <div id="indexRowPosterf" class="row">
+          </div>
+          <div id="indexRowPostere" class="row">
+          </div>
+          <div id="indexRowPosterp" class="row">
+          </div> -->
+
+      </div>
+  </section>
+   
+      
+                                 
+                              
+    
+    <!-- <button onclick="showToast('Data hava been saved in database')">Show Toast</button>
+    <div id="toast"></div> -->
+
+<!-- ============= FIREBASE =================== -->
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<!-- ============= FIREBASE =================== -->
+
+<script>
+      if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register('./js/sw.js') 
+            .then(res=>{
+                  console.info("SW Register");                  
+            })
+            .catch(err=>{
+                  console.error("Error in Registering SW" ,err );
+                  
+            })
+      }
+      else{
+            console.log("Service Worker not supported");
+            
+      }
+
+</script>
+
+
+      <!-- bootstrap jquery cloud start -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <!-- bootstrap jquery cloud End -->
+<script src="./js/index.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+      $(window).load(function () {
+            $("#flexiselDemo3").flexisel({
+                  visibleItems: 1,
+                  animationSpeed: 1000,
+                  autoPlay: true,
+                  autoPlaySpeed: 5000,
+                  pauseOnHover: true,
+                  enableResponsiveBreakpoints: true,
+                  responsiveBreakpoints: {
+                        portrait: {
+                              changePoint: 480,
+                              visibleItems: 1
+                        },
+                        landscape: {
+                              changePoint: 640,
+                              visibleItems: 1
+                        },
+                        tablet: {
+                              changePoint: 768,
+                              visibleItems: 1
+                        }
+                  }
+            });
+
+      });
+</script>
+     
+</body>
+
+</html>

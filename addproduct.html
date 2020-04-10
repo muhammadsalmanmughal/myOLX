@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- font awesome -->
+ <!-- bootstrap link start -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <!-- bootstrap link End-->
+    <!-- css -->
+    <link rel="stylesheet" href="./css/addproduct.css">
+    <!-- css -->
+    <title>Add Product</title>
+</head>
+<body>
+     <!-- ================================================================ -->
+     <nav class="navbar  navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <a href="./index.html">
+            <i class="fas fa-angle-left"></i>
+
+        <img src="./pic/main.png" alt="" style="width:70px;">
+      </a>
+           
+            
+
+      </nav>
+    <!-- form start -->
+<div class="container">
+
+            <h2 id="heading-ad">Post Your Ad</h2>
+     
+      <div class="main">
+
+      <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Select Category:</label>
+              <select class="form-control" id="selector">
+                  <option value="mobiles">Mobiles</option>
+                  <option value="electronicsAppliances">Electronics and Appliances</option>
+                  <option value="cars">Cars</option>
+                  <option value="bikes">Bikes</option>
+                  <option value="furniture">Furniture</option>
+                  <option value="realEstate">Real, Estate</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                        <label for="exampleInputEmail1">Enter Your Location:</label>
+                        <input type="text" class="form-control " id="txt-location"  placeholder="Enter Your Location">
+                       </div>
+                       
+                  </form>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Brand Name:</label>
+              <input type="text" class="form-control " id="txt-title" placeholder="Enter brand name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Model Of Your Ad:</label>
+              <input type="text" class="form-control " id="txt-model"  placeholder="Enter Model Of Your Ad">
+             </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Contact Number: </label>
+              <input type="text" class="form-control " id="txt-contact"  placeholder="Enter your contact number">
+             </div>
+             
+            <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description Of Your Ad:</label>
+                  <textarea class="form-control" id="txt-des" rows="3" placeholder="Enter your description"></textarea>
+             </div>
+             <div class="form-group">
+                  <label for="exampleInputEmail1">Enter Your Price:</label>
+                  <input type="text" class="form-control " id="txt-price"  placeholder="Please enter in PKR">
+                 </div>
+                 
+            </form>
+            
+            
+            <div class="upload-ad-photos">
+                  Photo for your ad:
+                  <div style="text-align:center">
+                        <!-- <img src="./pic/upload.png" style="width:280px;" alt="" id="picShow">
+                        <input type="file" name="photoSelect" style="display:none"id="image" onchange="showImg('picShow','photoSelect')" id="photoSelect"> -->
+                        <div>
+                              <input type="file" class="form-control-file" id="imgFile">
+                              <!-- <input type="button" class="btn btn-success" style="width:150px;" id="browse"> -->
+                        </div>
+                  </div>
+               
+            </div>
+            <button  onclick="addpost()">POST</button>
+                        <!-- <div id="submitbutton">
+                               <input type="submit"  value="Post"> 
+                        </div> -->
+</div>
+</div>
+<hr>
+<div id="toast"></div>
+
+
+
+
+
+
+
+<!-- ============= FIREBASE =================== -->
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<!-- ============= FIREBASE =================== -->
+    <!-- bootstrap jquery cloud start -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+          <!-- bootstrap jquery cloud End -->
+          <script src="./js/addproduct.js"></script>
+          <script src="./js/app.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</body>
+</html>
